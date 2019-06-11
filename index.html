@@ -1,0 +1,64 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <script src="fabric.js/dist/fabric.js"></script>
+        <link rel="stylesheet" href="button.css">
+
+    </head>
+    <body>
+        
+        <img src="./image/n文字icon.png" id="text" width="50" onclick="text()" />
+        
+        <img src="./image/n矩形icon.png" id="addwall" width="50" onclick="Addwall()" />
+        
+        <img src="./image/n說明icon.png" id="help" width="50" onclick="help()" />
+        
+        <img src="./image/n儲存icon.png" id="save" width="50" onclick="clickOK()" />
+				
+        <img src="./image/n門icon.png" class="addBtn" width="50" onclick="addItem1()" />
+				
+        <img src="./image/n窗icon.png" class="addBtn" width="50" onclick="addItem2()" />
+				
+				<div id="laddermode">
+        <img src="./image/n折梯icon.png" class="addBtn" width="50" onclick="addItem3()" />
+        <img src="./image/n剪刀梯icon.png" class="addLad 1" width="50" onclick="addItem4()" />
+        <img src="./image/n剪刀梯icon.png" class="addLad 2" width="50" onclick="addItem5()" />
+				</div>     		
+   
+        <div class="canvas-wrapper">
+          <canvas id="canvas"></canvas>
+        </div>
+
+
+        <div class="helplist">ppppp</div>
+
+        <div id="lowbutton">
+        
+        <img src="./image/n放大icon.png" id="large" width="50" onclick="larger()" />
+        
+        <img src="./image/n縮小icon.png" id="small" width="50" onclick="smaller()" />
+        
+        <img src="./image/n旋轉icon.png" id="rotate" width="50" onclick="rotate()" />
+        
+        <img src="./image/n刪除icon.png" id="delete" width="50" onclick="Delete()" />
+        </div>
+
+        <button type="button" id="saveCanvas" onclick="savetoline()">Save</button>
+        <button type="button" id="itemmode" onclick="Itemmode()">Item mode</button>
+        <button type="button" id="wallmode" onclick="Wallmode()">Wall mode</button>
+        <img id="result">
+    </body>
+
+
+    <script src="https://d.line-scdn.net/liff/1.0/sdk.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <script src="canvas.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/vconsole@3.2.0/dist/vconsole.min.js"></script>
+<script>
+  var vConsole = new VConsole();
+</script>
+</html>
